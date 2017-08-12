@@ -26,16 +26,9 @@ function fish_prompt
   end
 
   set -l git_dir (git rev-parse --git-dir 2> /dev/null)
-#  set prompt (set_color yellow)(prompt_pwd)
   set prompt (printf '[%s] %s%s%s@%s%s%s: %s%s%s' (date "+%Y-%m-%d %H:%M:%S") (set_color yellow) (whoami) (set_color normal) (set_color cyan) (hostname|cut -d . -f 1) (set_color normal) (set_color $fish_color_cwd) (pwd) (set_color normal))
 
-#  set date (date "+%Y-%m-%d %H:%M:%S")
-#  set username (whoami)
-#  set hostname (hostname|cut -d . -f 1)
-#  set prompt (set_color $fish_color_cwd) (prompt_pwd)
-
 if test -n "$git_dir"
-#    echo "["$date"] "$username"@"$hostname": "$prompt "("(parse_git_branch)")"
     echo $prompt "("(parse_git_branch)")"
     echo $status_face
   else
