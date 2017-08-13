@@ -1,24 +1,17 @@
 ### This is color scheme for Terminal.
 export CLICOLOR=1
-#export LSCOLORS=GxFxCxDxBxegedabagaced
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-#export LSCOLORS=ExFxCxDxBxegedabagacad
 
-
-### This is prompt setting.
-#PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]: \[\033[0;36m\]\W\[\e[0m\]\$ '
-#PS1='[¥d ¥t] ¥u@¥h:¥w ¥n$'
 
 ### This is command aliases.
 alias ls='ls -GFh'
 alias la='ls -la'
 alias ll='ls -l'
 
+
 ### This is AWS CLI settings.
 export JAVA_HOME=/Library/Java/Home
 
-export AWS_ACCESS_KEY=AKIAIKGXK4HB6J4YRNSA
-export AWS_SECRET_KEY=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
 export AWS_CREDENTIAL_FILE=$HOME/aws/api/credential.txt
 
 export EC2_HOME=$HOME/aws/api/ec2
@@ -48,8 +41,6 @@ function promps {
     GIT_PS1_SHOWUPSTREAM=1
     GIT_PS1_SHOWUNTRACKEDFILES=
     GIT_PS1_SHOWSTASHSTATE=1
-
-#export PS1='[\D{%F} \t] \[\033[1;32m\]\u\[\033[00m\]@\[\e[1;33m\]\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[1;31m\]$(__git_ps1)\[\033[00m\] \n\$ '
 
     # 色は気分で変えたいかもしれないので変数宣言しておく
     local U="\[\e[1;32m\]"
