@@ -43,11 +43,11 @@ function promps {
     GIT_PS1_SHOWSTASHSTATE=1
 
     # 色は気分で変えたいかもしれないので変数宣言しておく
-    local U="\[\e[1;32m\]"
-    local H="\[\e[1;33m\]"
-    local W="\[\e[1;34m\]"
-    local GIT="\[\e[1;31m\]"
-    local DEFAULT="\[\e[00m\]"
+    local U="\[\e[1;32m\]" # GREEN
+    local H="\[\e[1;33m\]" # YELLOW
+    local W="\[\e[1;34m\]" # BLUE
+    local GIT="\[\e[1;31m\]" # RED
+    local DEFAULT="\[\e[00m\]" # WHITE
 
     PS1="[\D{%F} \t] ${U}\u${DEFAULT}@${H}\h${DEFAULT}:${W}\w${GIT}\$(__git_ps1)${DEFAULT} \n\$ "
 }
