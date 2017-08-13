@@ -4,9 +4,14 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 
 ### This is command aliases.
+# ls
 alias ls='ls -GFh'
 alias la='ls -la'
 alias ll='ls -l'
+
+# open CotEditor in Terminal
+alias coteditor='open -a CotEditor'
+alias cedit='open -a CotEditor'
 
 
 ### This is AWS CLI settings.
